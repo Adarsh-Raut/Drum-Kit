@@ -88,15 +88,21 @@ button:hover {
   background-color: white;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
   .set {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   h1 {
+    flex: 1;
     margin-bottom: 10rem;
+    font-size: 4rem;
   }
   footer {
     margin-top: 10rem;
